@@ -17,12 +17,7 @@ pipeline {
         sh 'node --version'
       }
     }
-    stage('DB') {
-      agent {
-        docker { 'mysql:latest' }
-    }
-      steps {
-        sh ' SELECT * FROM XYZ ' 
+    
   }
   
 }
